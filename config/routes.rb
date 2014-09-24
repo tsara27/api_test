@@ -1,8 +1,8 @@
 Rails.application.routes.draw do
 
   namespace :api, defaults: {format: 'json'} do
-    resources :people
-    resources :device
+    resources :people, except: [:new, :edit, :update]
+    resources :device, only: [:show]
   end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
