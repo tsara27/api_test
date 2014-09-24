@@ -1,28 +1,8 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+<h2>This is Routes That is Provided to Test the API</h2>
+api_people GET    /api/people(.:format)     api/people#index {:format=>"json"}
+           POST   /api/people(.:format)     api/people#create {:format=>"json"}
+api_person GET    /api/people/:id(.:format) api/people#show {:format=>"json"}
+           DELETE /api/people/:id(.:format) api/people#destroy {:format=>"json"}
+api_device GET    /api/device/:person_id(.:format) api/device#show {:format=>"json"}
