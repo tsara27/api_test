@@ -1,6 +1,7 @@
 == README
 
 ## This is Routes That is Provided to Test the API
+
 * api_people GET    /api/people(.:format)     api/people#index {:format=>"json"}
   * POST   /api/people(.:format)     api/people#create {:format=>"json"}
 * api_person GET    /api/people/:id(.:format) api/people#show {:format=>"json"}
