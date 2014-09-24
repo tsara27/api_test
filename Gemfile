@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem 'unicorn'
+
 gem 'rails', '4.2.0.beta1'
 
 gem 'rails-api'
